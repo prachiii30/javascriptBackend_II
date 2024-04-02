@@ -4,6 +4,7 @@ import  {DB_NAME}  from "../constants.js";
 
 
 
+//whenever a async method gets completed it returns the promise
 const connectDB = async ()=>{
     try {
 
