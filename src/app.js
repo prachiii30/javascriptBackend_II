@@ -1,5 +1,6 @@
 import express  from "express";
 import cors from "cors";
+// cookie-parser is used for - mere server s user k browser k cookies access kr pau aur uski cookies set kr pau (crud operation on cookies)
 import cookieParser from "cookie-parser";
 
 
@@ -13,6 +14,9 @@ app.use(cors({
 
 app.use(express.json({limit:"20kb"}))  //form bhara wala data liya
 app.use(express.urlencoded({extended:true,limit:"16kb"}))
+app.use(express.static("public"))
+app.use(cookieParser())
+
 
 
 
