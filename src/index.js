@@ -38,7 +38,7 @@ app.listen(process.env.PORT || 8000),()=>{
 
 
 
-// function connectDB(){)
+// function connectDB(){}
 
 // connectDB()  
 
