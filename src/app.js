@@ -13,12 +13,12 @@ app.use(cors({
     origin:process.env.CORS_ORIGIN,
     credentials:true
 }))
+
 //we use multer for file uploading configure
 app.use(express.json({limit:"20kb"}))  //form bhara wala data liya
 app.use(express.urlencoded({extended:true,limit:"16kb"})) //extended :obj k andr obj de skte
 app.use(express.static("public")) 
 app.use(cookieParser())
-
 
 
 
